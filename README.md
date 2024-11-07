@@ -12,7 +12,7 @@
   - [ ] Submit transactions
 - [ ] Add support for Tangem wallet
 - [ ] First release
-
+ 
 # XRPL-trading-bot
 A trading bot that uses the decentralized exchange of the XRP Ledger. It uses arbitrage trading and market making to make profit.
 
@@ -35,7 +35,7 @@ The arbitrage trading bot takes advantage of the price differences in different 
 |                               | 3. Order: ETH.*r2* > USD.*r2* |
 ##### Example:
 The bot places an immediate or cancel offer that trades 10 USD.r1 for 9 EUR.r1. The bot then places a second immediate or cancel offer that trades 9 EUR.r2 for 11 USD.r2. The profit for this trade is 1 USD. Neither the `TakerGets` nor the `TakerPays` issuers have to be the same for both trades. All four issuers can be completely different. Doing so brings the most flexibility.
-<br>The bot only trades liquid order books and adjusts all `Offer` values from the lowest `TakerGets` balance.
+<br>The bot only trades liquid order books and adjusts all `Offer` values from the lowest `TakerGets` balance. 
 
 ### 🌊 [Market Maker](https://en.wikipedia.org/wiki/Market_maker)
 Market makers provide liquidity to a market. Place a buy and a sell order on the tip of a illiquid order book. The spread the two orders has to be big enough to cover the potential [transfer fees](https://xrpl.org/transfer-fees.html#transfer-fees). The market maker bot only trades illiquid order books, where %[^1] of the orders have been consumed in the last 2 weeks.
